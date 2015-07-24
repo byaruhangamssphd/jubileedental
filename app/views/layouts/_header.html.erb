@@ -1,0 +1,22 @@
+<div class="row">
+	<div class="col-md-2">
+		<%= image_tag("logo.jpeg", size: "100x80", alt: "wall") %>
+	</div>
+	<div class="col-md-4">
+		Jubilee Centre Dentaire
+	</div>
+</div>
+
+<div>
+	<nav class="navbar navbar-default" role="navigation">
+		<ul class="nav nav-pills nav-justified">
+			<li class="<%= 'active' if current_page?(root_path)%>"><%= link_to("Services & Products",root_path) %></li>
+			<li class="<%= 'active' if current_page?(health_healthinfo_path)%>"><%= link_to("Health Information  ",health_healthinfo_path) %></li>
+			<li class="<%= 'active' if current_page?(projects_myproject_path)%>"><%= link_to("Projects & Missions",projects_myproject_path) %></li>
+			<li class="<%= 'active' if current_page?(research_fieldwork_path)%>"><%= link_to("Research", research_fieldwork_path) %></li>
+			<li class="<%= 'active' if current_page?(appointment_rendezvous_path)%>"><%= link_to("Request appointment",appointment_rendezvous_path) %></li>
+			<li class="<%= 'active' if current_page?(partners_subscribe_path)%>"><%= link_to("Partner & Subscribe",partners_subscribe_path) %></li>
+			<li class="<%= 'active' if current_page?(employees_index_path)%>"><%= link_to("Employees",employees_index_path) %></li>
+		</ul>
+	</nav>
+</div>
